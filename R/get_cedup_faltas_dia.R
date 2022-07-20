@@ -5,7 +5,7 @@
 #' @param .file_pdf arquivo contendo diarios de classes em pdf
 #'
 #' @export
-get_cedup_faltas <- function(.file_pdf) {
+get_cedup_faltas_dia <- function(.file_pdf) {
   pdf_faltas <- pdftools::pdf_text(.file_pdf) %>%
     read_lines() %>%
     enframe(name = NULL) %>%

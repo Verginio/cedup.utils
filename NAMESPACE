@@ -3,6 +3,7 @@
 export()
 export(get_cedup_cadastro_alunos)
 export(get_cedup_faltas)
+export(get_cedup_faltas_dia)
 export(get_horario)
 export(save_cedup_cadastro_alunos)
 export(save_ead_drive)
