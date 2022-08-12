@@ -1,8 +1,8 @@
-#' Função para avaliações
+#' Funcao para avaliacoes
 #'
-#' função para recuperar as avaliacoes por tipo e data a partir do diário de classe do professor
+#' funcao para recuperar as avaliacoes por tipo e data a partir do diario de classe do professor
 #'
-#' @param .file_pdf arquivo contendo horários dos professores em pdf
+#' @param .file_pdf arquivo contendo horarios dos professores em pdf
 #'
 #' @export
 get_cedup_avaliacoes <- function(.file_pdf) {
