@@ -29,6 +29,7 @@ save_ead_drive <- function(.file_xltx, .ss_id) {
 
   vct_professor <- c(
     "Carol",
+    "Carlos2",
     "Carolina",
     "Darlan 2",
     "Eliane",
@@ -42,9 +43,9 @@ save_ead_drive <- function(.file_xltx, .ss_id) {
     filter(professor %in% vct_professor) %>%
     pivot_longer(c(-hora,-professor)) %>%
     filter(value == "EAD") %>%
-    rename("in?cio" = "hora") %>%
-    mutate(`t?rmino` = `in?cio` + lubridate::hms("00:45:00")) %>%
-    mutate_at(c("in?cio", "t?rmino"), ~ format(.x, "%H:%M")) %>%
+    rename("início" = "hora") %>%
+    mutate(`término` = `início` + lubridate::hms("00:45:00")) %>%
+    mutate_at(c("início", "término"), ~ format(.x, "%H:%M")) %>%
     mutate_at(
       "professor",
       ~ .x %>%
